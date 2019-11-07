@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Money converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <h3>Currency Calculator</h3>    
+      </div>
+  <form> 
+    <div class="converter">
+      <label for="currency"></label>
+        <select name="currency" id="currency1" style="font-weight: bold;">
+          <option value="uah">UAH Гривня</option>
+          <option value="usd">USD Долар США</option> 
+          <option value="eur">EUR Євро</option>
+        </select>
+        <label for="currency">convert to</label>
+          <select name="currency" id="currency2" style="font-weight: bold;">
+            <option value="uah">UAH Гривня</option>
+            <option value="usd">USD Долар США</option> 
+            <option value="eur">EUR Євро</option>
+        </select>     
+    </div>
+    <input type="number" id="amount" value="" placeholder="0.00">
+    <input type="number" id="result" value="" placeholder="0.00">
+    <input type="button" id="count" value="Show me the result!" onclick="moneyConverter();">        
+  </form>
+<script src="app.js"></script>    
+</body>
+</html>
